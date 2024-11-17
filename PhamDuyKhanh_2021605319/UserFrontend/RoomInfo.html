@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hotel Booking</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Updated: Aug 15 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Hotel Booking</h1>
+        <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Trang chủ<br></a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#services">Danh sách phòng</a></li>
+          <li><a href="#contact">Liên hệ với chúng tôi</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Đăng nhập</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="container my-5 pt-5">
+      <div class="row">
+          <!-- Phần hiển thị thông tin phòng -->
+          <div class="col-lg-8">
+              <div class="mb-4">
+                  <img src="./assets/img/roomShowing.jpg" alt="Hình ảnh phòng" class="img-fluid rounded">
+              </div>
+              <h2 class="mb-3">Phòng 101 - Phòng vừa</h2>
+              <p class="text-muted">Loại phòng: Phòng vừa | Sức chứa: 2-4 người</p>
+              <h4>Mô tả</h4>
+              <p>
+                  Phòng 101 được thiết kế sang trọng, hiện đại với đầy đủ tiện nghi. 
+                  Căn phòng bao gồm giường đôi, bàn làm việc, và ban công với tầm nhìn hướng ra thành phố. 
+                  Hệ thống điều hòa nhiệt độ và Wi-Fi tốc độ cao luôn sẵn sàng phục vụ.
+              </p>
+              <ul>
+                  <li>Diện tích: 35m²</li>
+                  <li>Trang bị: TV màn hình phẳng, minibar, két sắt</li>
+                  <li>Phòng tắm riêng với bồn tắm và vòi sen</li>
+                  <li>Dịch vụ dọn phòng hàng ngày</li>
+              </ul>
+          </div>
+  
+          <!-- Mini form đặt phòng -->
+          <div class="col-lg-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title text-center mb-4">Đặt Phòng Nhanh</h5>
+                      <form>
+                          <!-- Tên phòng -->
+                          <div class="mb-3">
+                              <label for="roomName" class="form-label">Tên phòng</label>
+                              <input type="text" class="form-control" id="roomName" value="Phòng 101" readonly>
+                          </div>
+  
+                          <!-- Số lượng người ở -->
+                          <div class="mb-3">
+                              <label class="form-label">Số lượng người ở</label>
+                              <input type="number" class="form-control" id="guestCount" value="1" min="1" max="4" required>
+                          </div>
+  
+                          <!-- Ngày bắt đầu -->
+                          <div class="mb-3">
+                              <label for="startDate" class="form-label">Ngày bắt đầu</label>
+                              <input type="datetime-local" class="form-control" id="startDate" required>
+                          </div>
+  
+                          <!-- Ngày kết thúc -->
+                          <div class="mb-3">
+                              <label for="endDate" class="form-label">Ngày kết thúc</label>
+                              <input type="datetime-local" class="form-control" id="endDate" required>
+                          </div>
+  
+                          <!-- Nút đặt phòng -->
+                          <div class="d-grid">
+                              <button type="submit" class="btn btn-primary">Đặt phòng</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about d-flex">
+          <div>
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">GP</span>
+            </a>
+          </div>
+          <div class="footer-contact pt-3 d-flex">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
